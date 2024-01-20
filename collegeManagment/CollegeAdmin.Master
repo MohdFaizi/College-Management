@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CollegeAdmin.master.cs" Inherits="collegeManagment.CollegeAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Classes/CSS/bootstrap.min.css" rel="stylesheet" />
+    <script src="Classes/JS/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="row w-100">
+            <div class="col-12">
+                <header>
+                    <div class="col-12" style="height: 35px">
+                        <div class="fixed-top d-flex justify-content-center">
+                            <h3>
+                                <asp:Label runat="server" ID="lblhead">Welcome to the Default Page</asp:Label></h3>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="col-12">
+                <div class="row p-2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="col-12 bg-warning">
+                <footer>
+                    <div class="fixed-bottom d-flex justify-content-center bg-warning">
+                        Develop By : Mr Mohammad Faiz
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
